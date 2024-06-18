@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top_banner {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #d6cdc3;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999;
+}
+
+.tb_item {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.tb_item:first-child {
+    top: 0
+}
+
+.tb_item:nth-child(3) {
+    color: hotpink;
+}
+
+.tb_item:nth-child(4) {
+    color: darkcyan;
+}
