@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comma</title>
+
+    <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script defer src="./js/common.js"></script>
+    <script defer src="./js/header_footer.js"></script>
+    <script defer src="./js/item_list.js"></script>
+    <script defer src="./js/item.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header_footer.css">
+    <link rel="stylesheet" href="./css/item.css">
+    <link rel="icon" href="./img/favicon-16x16.png" type="image/png">
+
+    <script>
+        var sp = ['android', 'iphone', 'ipad'];
+        for(var i = 0; i < sp.length; i++) {
+            if(navigator.userAgent.toLowerCase().match(sp[i])) {
+                location.replace("mobile/item.html");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="top_banner">
+        <div class="tb_item">The comma에 오신걸 환영합니다 :)</div>
+        <div class="tb_item">즐거운 구경되세요</div>
+        <div class="tb_item">oneworld</div>
+        <div class="tb_item">포트폴리오</div>
+        <div class="tb_item">예쁘게 봐주세요 :D</div>
+    </div>
+    <div class="wrap" style="height: 5000px;">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html">logo</a>
+            </div>
+            <ul class="menu">
+                <li class="menu_item">
+                    <a href="product(best).html?cate_no=0">BEST</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(new5).html?cate_no=1">NEW 5%</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(outer).html?cate_no=2">OUTER</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(top).html?cate_no=3">TOP</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(bottom).html?cate_no=4">BOTTOM</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(acc).html?cate_no=5">ACC</a>
+                </li>
+                <li class="menu_item">
+                    <a href="product(bag_shoes).html?cate_no=6">BAG&SHOES</a>
+                </li>
+            </ul> 
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="detail_area"></div>
+                <div class="product_detail">
+                    <div id="prod_detail" class="tab_area">
+                        <ul class="detail_tap">
+                            <li class="tap_active">
+                                <a href="#prod_detail">PRODUCT DETAIL</a>
+                            </li>
+                            <li>
+                                <a href="#prod_guide">SHOPPING GUIDE</a>
+                            </li>
+                            <li>
+                                <a href="#prod_review">REVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#prod_qna">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#prod_related">WITH ITEM</a>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <img src="img/product/detail_page.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="prod_guide" class="tab_area">
+                        <ul class="detail_tap">
+                            <li>
+                                <a href="#prod_detail">PRODUCT DETAIL</a>
+                            </li>
+                            <li class="tap_active">
+                                <a href="#prod_guide">SHOPPING GUIDE</a>
+                            </li>
+                            <li>
+                                <a href="#prod_review">REVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#prod_qna">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#prod_related">WITH ITEM</a>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <img src="img/product/pay_info.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="prod_review" class="tab_area">
+                        <ul class="detail_tap">
+                            <li>
+                                <a href="#prod_detail">PRODUCT DETAIL</a>
+                            </li>
+                            <li>
+                                <a href="#prod_guide">SHOPPING GUIDE</a>
+                            </li>
+                            <li class="tap_active">
+                                <a href="#prod_review">REVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#prod_qna">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#prod_related">WITH ITEM</a>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <div class="review_txt">게시물이 없습니다</div>
+                            <div class="review_btn">
+                                <div class="review_btn_in">글쓰기</div>
+                                <div class="review_btn_in">목록보기</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prod_qna" class="tab_area">
+                        <ul class="detail_tap">
+                            <li>
+                                <a href="#prod_detail">PRODUCT DETAIL</a>
+                            </li>
+                            <li>
+                                <a href="#prod_guide">SHOPPING GUIDE</a>
+                            </li>
+                            <li>
+                                <a href="#prod_review">REVIEW</a>
+                            </li>
+                            <li class="tap_active">
+                                <a href="#prod_qna">Q&amp;A</a>
+                            </li>
+                            <li>
+                                <a href="#prod_related">WITH ITEM</a>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <div class="review_txt">게시물이 없습니다</div>
+                            <div class="review_btn">
+                                <div class="review_btn_in">글쓰기</div>
+                                <div class="review_btn_in">목록보기</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="prod_related" class="tab_area">
+                        <ul class="detail_tap">
+                            <li>
+                                <a href="#prod_detail">PRODUCT DETAIL</a>
+                            </li>
+                            <li>
+                                <a href="#prod_guide">SHOPPING GUIDE</a>
+                            </li>
+                            <li>
+                                <a href="#prod_review">REVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#prod_qna">Q&amp;A</a>
+                            </li>
+                            <li class="tap_active">
+                                <a href="#prod_related">WITH ITEM</a>
+                            </li>
+                        </ul>
+                        <div class="detail_box">
+                            <div class="with_item">
+                                <div class="with_item_pan">보러가기</div>
+                            </div>
+                            <div class="with_item">
+                                <div class="with_item_pan">보러가기</div>
+                            </div>
+                            <div class="with_item">
+                                <div class="with_item_pan">보러가기</div>
+                            </div>
+                            <div class="with_item">
+                                <div class="with_item_pan">보러가기</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="f_body company_info">
+                    <div class="f_title">
+                        <span>COMPANY INFO</span>
+                    </div>
+                    <p>상호명 마켓디자인 대표자 김은선 대표전화 070-5151-6866</p>
+                    <p>개인정보관리책임자 김은선(marketmail@naver.com)</p>
+                    <p>통신판매업신고 제2019화성동탄0443호</p>
+                    <p>사업자등록번호 121-79-00088 [사업자정보확인]</p>
+                    <p>주소 18503 경기도 화성시 동탄순환대로10길 88 (산척동)</p>
+                    <p>결제대금예치업 등록번호00-000-00000 [서비스가입사실확인]</p>
+                    <p>호스팅제공자카페24(주). COPYRIGHT ©마켓디자인 ALL RIGHT RESERVE</p>
+                </div>
+                <div class="f_body cs_center">
+                    <div class="f_title">
+                        <span>CUSTOMER CENTER</span>
+                    </div>
+                    <p>070-5151-6866</p>
+                    <p>MON - FRIAM 10:00 - PM 17:00</p>
+                    <p>LUNCH TIMEAM 12:00 - PM 01:00</p>
+                    <p>SAT, SUN, HOLIDAY CLOSED</p>
+                    <div class="f_title">
+                        <span>BANK ACCOUNT</span>
+                    </div>
+                    <p>국민은행000000-00-000000</p>
+                    <p>신한은행0000-000-000000</p>
+                    <p>예금주마켓디자인</p>
+                </div>
+                <div class="f_body return">
+                    <div class="f_title">
+                        <span>RETURN & EXCHANGE</span>
+                    </div>
+                    <p>[보내실곳] 서울특별시 동작구 보라매로5길 15 (신대방동,전문건설회관) 단순변심으로 인한 교환 및 반품은 택배비를 부담해주셔야만 교환 및 환불이 가능합니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
